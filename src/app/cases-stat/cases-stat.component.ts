@@ -56,4 +56,9 @@ export class CasesStatComponent implements OnInit {
     });
   }
 
+  changeStatus() {
+    this.isLoadingResults = true;
+    this.getStatistic(this.label);
+  }
+
 }
